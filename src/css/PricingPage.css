@@ -1,0 +1,124 @@
+.pricingContainer
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--pagePadding);
+    background: url('/public/assets/Vector\ 3.png');
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+
+
+.leftContent
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.details .boldMediumTexts
+{
+    line-height: 1;
+}
+.details .regularMediumTexts
+{
+    padding: 2rem 0 8rem;
+    line-height: 1.5;
+}
+
+.checkBoxDivs
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.cardTop .itemDiv
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkBoxDivs .check 
+{
+    width: 64px;
+    height: 64px;
+    background-color: var(--grayBg);
+    border-radius: 0.5rem;
+    margin-right: 0.85rem;
+}
+
+.pricingRightContent
+{
+    background:linear-gradient(var(--linearBgOne), var(--linearBgTwo));
+    box-shadow: 0px 0px 20px 0.25px black;
+}
+
+.cardTop
+{
+
+    background:linear-gradient(to right ,rgb(255, 255, 255), rgba(255, 255, 255, 0.766)), url(/public/assets/AZ-logo.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+    padding:1.75rem 2.5rem ;
+}
+.cardTop .lowBoldMediumtexts
+{
+    color: #818181;
+    text-decoration: line-through;
+    padding: 1rem 0;
+}
+
+.cardBottom 
+{
+    padding: 0 2.5rem;
+    color: var(--whiteText);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+
+}
+
+.cardBottom .itemDiv
+{
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.cardBottom .check 
+{
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    border: 1px solid var(--grayBg);
+    border-radius: 0.5rem;
+    color: var(--whiteText);
+    margin-right: 0.5rem;
+}
+.cardBottom .regularMediumTexts
+{
+    white-space: normal;
+     word-break:break-all;
+     word-wrap: break-word;
+
+}
+
+.cardBtn
+{
+    display: flex;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+.cardBtn button 
+{
+    width: 100%;
+    border-radius: 0.5rem;
+}

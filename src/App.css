@@ -41,6 +41,7 @@ earn 10X of what you paid. */
 {
     font-size: 4rem;
     font-weight: 800;
+  font-family: 'Rubik', sans-serif;
 }
 
 /* 1999 */
@@ -58,6 +59,7 @@ earn 10X of what you paid. */
 {
     font-size: 2rem;
     font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
 }
 /* highest fresher package */
 .regularMediumTexts
@@ -90,4 +92,9 @@ button
     border: none;
     outline: none;
     padding: 0.65rem 1.25rem;
+}
+
+
+@media screen and (max-width:426px) {
+    
 }
