@@ -45,6 +45,9 @@ function About() {
                 </div>
             </div>
         </div>
+        <div className="imageContainer">
+            <img src="/assets/Group\ 316.png" alt="" />
+        </div>
     </div>
   )
 }

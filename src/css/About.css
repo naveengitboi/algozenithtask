@@ -1,63 +1,93 @@
-.aboutContainer
-{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content:start;
-    padding: var(--pagePadding);
-    background: url(/public/assets/Group\ 316.png), linear-gradient(var(--linearBgOne), var(--linearBgTwo));
-    background-repeat: no-repeat;
-    background-position: 90%, 50%;
-    background-size: contain;
+.aboutContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: var(--pagePadding);
+  background: url(/public/assets/Group\ 316.png),
+    linear-gradient(var(--linearBgOne), var(--linearBgTwo));
+  background-repeat: no-repeat;
+  background-position: 90%, 50%;
+  background-size: contain;
 }
 
-.aboutContentDiv
-{
-    width: 60%;
-    color: var(--whiteText);
+.aboutContentDiv {
+  width: 60%;
+  color: var(--whiteText);
+}
+.imageContainer {
+  display: none;
 }
 
-
-.infoAbout .regularMediumTexts
-{
-    padding:2rem 0 0;
-    line-height: 1.2;
+.infoAbout .regularMediumTexts {
+  padding: 2rem 0 0;
+  line-height: 1.2;
 }
-.btnDiv
-{
-    padding: 2rem 0;
+.btnDiv {
+  padding: 2rem 0;
 }
-.btnDiv button
-{
-    border-radius: 0.5rem;
-    margin-right: 2rem;
+.btnDiv button {
+  border-radius: 0.5rem;
+  margin-right: 2rem;
 }
-.btnDiv .gradientBg 
-{
-    color: var(--whiteText);
-    border: 1px solid var(--gradientBorder);
+.btnDiv .gradientBg {
+  color: var(--whiteText);
+  border: 1px solid var(--gradientBorder);
 }
 
-.boxesDiv
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap:1rem;
+.boxesDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
 }
 
-.itemDiv 
-{
-    display: flex;
+.itemDiv {
+  display: flex;
 
-    align-items: center;
+  align-items: center;
 }
 
-.itemDiv .tickBox
-{
+.tickBox {
   width: 64px;
-height: 64px;
-    border: 1px solid var(--gradientBorder);
-    margin-right: 0.85rem;
-    border-radius: 0.5rem;
+  height: 64px;
+  border: 1px solid var(--gradientBorder);
+  margin-right: 0.85rem;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 426px) {
+  .aboutContainer {
+    background: linear-gradient(var(--linearBgOne), var(--linearBgTwo));
+  }
+  .aboutContentDiv {
+    width: 100%;
+  }
+      .imageContainer {
+      display: block;
+    }
+    .aboutContentDiv .btnDiv
+    {
+        display: flex;
+        order: 3;
+        flex-direction: column;
+        padding: 1rem 0;
+        border-radius: 0.25rem;
+    }
+    .btnDiv button 
+    {
+        margin: 0.85rem 0;
+    }
+    .aboutContentDiv .boxesDiv
+    {
+        order: 0;
+        
+    }
+
+    .itemDiv  .tickBox 
+    {
+        width: 30px;
+        height: 30px;
+    }
+    
 }
