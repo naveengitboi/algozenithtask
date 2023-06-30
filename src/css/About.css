@@ -1,0 +1,63 @@
+.aboutContainer
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    padding: var(--pagePadding);
+    background: url(/public/assets/Group\ 316.png), linear-gradient(var(--linearBgOne), var(--linearBgTwo));
+    background-repeat: no-repeat;
+    background-position: 90%, 50%;
+    background-size: contain;
+}
+
+.aboutContentDiv
+{
+    width: 60%;
+    color: var(--whiteText);
+}
+
+
+.infoAbout .regularMediumTexts
+{
+    padding:2rem 0 0;
+    line-height: 1.2;
+}
+.btnDiv
+{
+    padding: 2rem 0;
+}
+.btnDiv button
+{
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+}
+.btnDiv .gradientBg 
+{
+    color: var(--whiteText);
+    border: 1px solid var(--gradientBorder);
+}
+
+.boxesDiv
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1rem;
+}
+
+.itemDiv 
+{
+    display: flex;
+
+    align-items: center;
+}
+
+.itemDiv .tickBox
+{
+  width: 64px;
+height: 64px;
+    border: 1px solid var(--gradientBorder);
+    margin-right: 0.85rem;
+    border-radius: 0.5rem;
+}

@@ -24,7 +24,7 @@ font-family: 'Rubik', sans-serif; */
 
     /* rectangular boxes */
     --grayBg:#D9D9D9;
-    --gradientBorder: #CFF1FF, #2D5666;
+    --gradientBorder: #cff1ff68;
 }
 
 
@@ -80,3 +80,14 @@ earn 10X of what you paid. */
 }
 
 
+.gradientBg 
+{
+    background: linear-gradient(var(--linearBgOne), var(--linearBgTwo));
+}
+
+button 
+{
+    border: none;
+    outline: none;
+    padding: 0.65rem 1.25rem;
+}

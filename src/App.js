@@ -1,8 +1,13 @@
 import './App.css'
+
+import About from './components/About'
 function App(){
   return(
     <>
-    <h1>App</h1>
+    <div className="App">
+      <About/>
+
+    </div>
     </>
   )
 }
