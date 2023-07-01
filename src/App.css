@@ -97,10 +97,128 @@ button
 /* responsive */
 
 
-@media screen and (max-width:426px) {
+@media screen and (min-width:769px)  and (max-width:1441px) {
     :root 
     {
-        --pagePadding:1rem;
+        --pagePadding:10vw;
+    }
+    /* Be better at DSA & CP */
+
+.boldMainTexts
+{
+    font-size: 4rem;
+
+}
+/* Invest in skills,
+earn 10X of what you paid. */
+.boldMediumTexts
+{
+    font-size: 3.5rem;
+    font-weight: 800;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* 1999 */
+.lowBoldMediumtexts
+{
+    font-size: 2.5rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+
+}
+
+/* 1.2Cr/Year */
+
+.boldSmallText
+{
+    font-size: 1.875rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+/* highest fresher package */
+.regularMediumTexts
+{
+    font-size:1.25rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* join now */
+.miniTexts  
+{
+    font-size:1rem;
+}
+}
+
+
+
+/* tab */
+
+@media screen and (min-width:431px)  and (max-width:769px) {
+    :root 
+    {
+        --pagePadding:4rem;
+    }
+    /* Be better at DSA & CP */
+
+.boldMainTexts
+{
+    font-size: 3rem;
+
+}
+/* Invest in skills,
+earn 10X of what you paid. */
+.boldMediumTexts
+{
+    font-size: 2.5rem;
+    font-weight: 800;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* 1999 */
+.lowBoldMediumtexts
+{
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+
+}
+
+/* 1.2Cr/Year */
+
+.boldSmallText
+{
+    font-size: 1.45rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+/* highest fresher package */
+.regularMediumTexts
+{
+    font-size:1rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* join now */
+.miniTexts  
+{
+    font-size:0.85rem;
+}
+}
+
+
+
+
+
+
+
+
+
+/* mobile */
+
+@media screen and (max-width:431px){
+    :root 
+    {
+        --pagePadding:2.5rem;
     }
     /* Be better at DSA & CP */
 .boldMainTexts
@@ -130,20 +248,23 @@ earn 10X of what you paid. */
 
 .boldSmallText
 {
-    font-size: 0.875rem;
+    font-size: 1.15rem;
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
 }
 /* highest fresher package */
 .regularMediumTexts
 {
-    font-size:0.75rem;
+    font-size:0.85rem;
     font-family: 'DM Sans', sans-serif;
 }
 
 /* join now */
 .miniTexts  
 {
-    font-size:0.75rem;
+    font-size:0.65rem;
 }
+
 }
+
+

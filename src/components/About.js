@@ -45,8 +45,9 @@ function About() {
                 </div>
             </div>
         </div>
+        
         <div className="imageContainer">
-            <img src="/assets/Group\ 316.png" alt="" />
+            <img src="/assets/mainImg.png" alt="" />
         </div>
     </div>
   )

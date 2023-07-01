@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: start;
   padding: var(--pagePadding);
-  background: url(/public/assets/Group\ 316.png),
+  background: url(/public/assets/mainImg.png),
     linear-gradient(var(--linearBgOne), var(--linearBgTwo));
   background-repeat: no-repeat;
   background-position: 90%, 50%;
@@ -55,32 +55,53 @@
   margin-right: 0.85rem;
   border-radius: 0.5rem;
 }
-
-@media screen and (max-width: 426px) {
+@media screen and (min-width:431px) and (max-width: 769px) {
   .aboutContainer {
     background: linear-gradient(var(--linearBgOne), var(--linearBgTwo));
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: var(--pagePadding);
   }
   .aboutContentDiv {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
+  .infoAbout .regularMediumTexts {
+  padding: 1rem 0 0;
+  line-height: 1.2;
+}
       .imageContainer {
       display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .imageContainer img 
+    {
+      width: 110%;
     }
     .aboutContentDiv .btnDiv
     {
         display: flex;
         order: 3;
         flex-direction: column;
-        padding: 1rem 0;
+        padding: 0.5rem 0;
         border-radius: 0.25rem;
     }
     .btnDiv button 
     {
         margin: 0.85rem 0;
+        border-radius: 0.25rem;
     }
     .aboutContentDiv .boxesDiv
     {
         order: 0;
+        margin: 1rem 0;
         
     }
 
@@ -88,6 +109,75 @@
     {
         width: 30px;
         height: 30px;
+        border-radius: 0.25rem;
+    }
+    .itemDiv .regularMediumTexts
+    {
+      flex-basis: 100%;
+    }
+    
+    
+}
+
+@media screen and (max-width:431px) {
+  .aboutContainer {
+    background: linear-gradient(var(--linearBgOne), var(--linearBgTwo));
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: var(--pagePadding);
+  }
+  .aboutContentDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .infoAbout .regularMediumTexts {
+  padding: 1rem 0 0;
+  line-height: 1.2;
+}
+      .imageContainer {
+      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .imageContainer img 
+    {
+      width: 110%;
+    }
+    .aboutContentDiv .btnDiv
+    {
+        display: flex;
+        order: 3;
+        flex-direction: column;
+        padding: 0.5rem 0;
+        border-radius: 0.25rem;
+    }
+    .btnDiv button 
+    {
+        margin: 0.85rem 0;
+        border-radius: 0.25rem;
+    }
+    .aboutContentDiv .boxesDiv
+    {
+        order: 0;
+        margin: 1rem 0;
+        
+    }
+
+    .itemDiv  .tickBox 
+    {
+        width: 30px;
+        height: 30px;
+        border-radius: 0.25rem;
+    }
+    .itemDiv .regularMediumTexts
+    {
+      flex-basis: 100%;
     }
     
 }
